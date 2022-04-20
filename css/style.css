@@ -22,6 +22,12 @@
   font-display: swap;
 }
 
+.header img {
+  width: 120px;
+  height: 50px;
+  display: block;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +41,20 @@ body {
 
 .wrapper {
   max-width: 1440px;
+  height: 100vh;
   margin: 0 auto;
+  background: #674bb1 url("/img/bg-mobile.svg") no-repeat;
+}
+
+@media (min-width: 376px) {
+  .wrapper {
+    background: #674bb1 url("/img/bg-desktop.svg") no-repeat;
+  }
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

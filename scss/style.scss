@@ -1,4 +1,5 @@
 @import './global';
+@import './header';
 
 *{
   margin: 0;
@@ -10,5 +11,17 @@ body{
 }
 .wrapper{
   max-width: 1440px;
+  height: 100vh;
   margin: 0 auto;
+  background: rgb(103, 75, 177) url('/img/bg-mobile.svg') no-repeat;
+}
+@media(min-width: 376px){
+  .wrapper{
+    background: rgb(103, 75, 177) url('/img/bg-desktop.svg') no-repeat;
+  }
+}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 20px;
 }
