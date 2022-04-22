@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 300px 280px auto;
-  text-align: center;
+  justify-items: center;
   .main-head-img{max-width: 100%;}
   .text{
+    text-align: center;
     color: rgb(255, 255, 255);
     h1{
       text-transform: capitalize;
@@ -17,11 +18,35 @@
   .registerBtn{
     width: 240px;
     height: 35px;
-    margin: auto;
     border-radius: 20px;
     border: none;
     color: rgb(103, 75, 177);
     cursor: pointer;
   }
-
+}
+@media(min-width: 768px){
+  .main{
+    grid-template-rows: 400px 280px auto;
+    .main-head-img{width: 500px; height: 350px;}
+  }
+}
+@media(min-width: 1024px){
+  .main{
+    grid-template-columns: 60% auto auto;
+    grid-template-rows: auto 240px auto;
+    // column-gap: 20px;
+    justify-items: left;
+    .main-head-img{
+      grid-row: 1 / 3;
+      width: 560px;
+      height: 420px;
+    }
+    .text{
+      text-align: left;
+    }
+    .registerBtn{
+      grid-row: 2 / 3;
+      margin-top: 20px;
+    }
+  }
 }
