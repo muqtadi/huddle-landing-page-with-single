@@ -12,12 +12,13 @@ body{
 }
 .wrapper{
   max-width: 1440px;
-  height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   background: rgb(103, 75, 177) url('/img/bg-mobile.svg') no-repeat;
 }
 @media(min-width: 376px){
   .wrapper{
+    height: 100%;
     background: rgb(103, 75, 177) url('/img/bg-desktop.svg') no-repeat;
   }
 }
