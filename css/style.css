@@ -87,6 +87,7 @@
     -ms-grid-rows: auto 240px auto;
         grid-template-rows: auto 240px auto;
     justify-items: left;
+    margin-top: 80px;
   }
   .main .main-head-img {
     -ms-grid-row: 1;
@@ -103,6 +104,12 @@
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     margin-top: 20px;
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+  }
+  .main .registerBtn:hover {
+    background-color: #e980e7;
+    color: white;
   }
 }
 
