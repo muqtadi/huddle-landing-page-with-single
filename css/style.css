@@ -33,9 +33,10 @@
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  -ms-grid-rows: 300px 280px auto;
-      grid-template-rows: 300px 280px auto;
+  -ms-grid-rows: 300px auto auto;
+      grid-template-rows: 300px auto auto;
   justify-items: center;
+  grid-row-gap: 20px;
 }
 
 .main .main-head-img {
@@ -87,6 +88,7 @@
     -ms-grid-rows: 180px 300px;
         grid-template-rows: 180px 300px;
     justify-items: left;
+    grid-row-gap: 40px;
     margin-top: 60px;
   }
   .main .main-head-img {
@@ -103,7 +105,6 @@
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
-    margin-top: 20px;
     -webkit-transition: ease .5s;
     transition: ease .5s;
   }
